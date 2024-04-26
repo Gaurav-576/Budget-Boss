@@ -73,7 +73,7 @@ export const GlobalProvider = ({ children } : {children: ReactNode}) => {
   
   const addBudget = (title: string, budgetAmount: number) => {
     if(!title) return (
-      toast.error((t) => (
+      toast.error(() => (
         <div>
           <p><b>Invalid Input Field</b></p>
           <p className="text-xs">Title of the budget cannot be empty.</p>
@@ -89,7 +89,7 @@ export const GlobalProvider = ({ children } : {children: ReactNode}) => {
       })
     )
     if(budgetAmount < 0) return (
-      toast.error((t) => (
+      toast.error(() => (
         <div>
           <p><b>Invalid Input Field</b></p>
           <p className="text-xs">Budget amount cannot be negative.</p>
@@ -105,7 +105,7 @@ export const GlobalProvider = ({ children } : {children: ReactNode}) => {
       })
     )
     if(budgetList.find((budget) => budget.title === title)) return (
-      toast.error((t) => (
+      toast.error(() => (
         <div>
           <p><b>Budget with the same title already exists.</b></p>
           <p className="text-xs">Please choose a different title.</p>
@@ -169,7 +169,7 @@ export const GlobalProvider = ({ children } : {children: ReactNode}) => {
   const addTransaction = (title:string, amount:number, type: 'expense' | 'income', budgetId: string, note?: string) => {
     if(!note) note = "";
     if(amount < 0) return (
-      toast.error((t) => (
+      toast.error(() => (
         <div>
           <p><b>Invalid Input Field</b></p>
           <p className="text-xs">Amount cannot be negative.</p>
