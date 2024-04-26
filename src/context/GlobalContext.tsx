@@ -152,6 +152,22 @@ export const GlobalProvider = ({ children } : {children: ReactNode}) => {
   }
 
   const deleteBudget = (id: string, spentAmount:number) => {
+    if(id == 'income' || 'misc') return (
+      toast.error(() => (
+        <div>
+          <p><b>Invalid Operation</b></p>
+          <p className="text-xs">Cannot delete the default budget.</p>
+        </div>
+      ), {
+        style: {
+          borderRadius: '10px',
+          fontWeight: 600,
+          background: '#7F1D1D',
+          border: '1px solid #fff',
+          color: '#fff',
+        },
+      })
+    )
     budgetList.map((budget) => {
       if(budget.id === 'misc') {
         budget.spentAmount = budget.spentAmount + spentAmount

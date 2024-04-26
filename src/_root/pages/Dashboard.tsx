@@ -84,6 +84,15 @@ const Dashboard = () => {
   }
 
   const handleBudgetDeletion = (id: string, spentAmount:number) => {
+    if(id == 'income' || id == 'misc') return Swal.fire({
+      title: 'Cannot Delete',
+      text: "It is a default budget and cannot be deleted.",
+      icon: 'error',
+      showCancelButton: false,
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'OK'
+    })
+
     Swal.fire({
       title: 'Are you sure?',
       text: "You won't be able to revert this!",
@@ -176,7 +185,6 @@ const Dashboard = () => {
                   } />
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  
                   {budget.id !== 'income' && budget.id !== 'misc' &&
                   <div className="flex">
                     <CardDescription className="text-md font-bold font-sans">Remaining -&nbsp;</CardDescription>
