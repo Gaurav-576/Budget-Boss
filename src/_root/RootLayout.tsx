@@ -1,6 +1,8 @@
 // import React, { useRef } from "react"
 import { NavLink, Outlet } from "react-router-dom"
 
+import img1 from "../assets/logo.png"
+
 const RootLayout = () => {
   const activeLinkStyle = ({isActive} : {isActive:boolean}) => {
     return (
@@ -8,11 +10,10 @@ const RootLayout = () => {
     )
   }
 
-
   return (
     <>
       <nav className="w-64 flex flex-col bg-bg-left justify-center gap-8">
-        <img src="../public/assets/logo.png"></img>
+        <img src={img1} alt=""/>
         <NavLink style={activeLinkStyle} to="/dashboard" className="flex group visible justify-start pl-8 py-4 align-center hover:bg-gray-3">
           <div className="flex justify-around align-center items-center group-hover:text-blue-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
