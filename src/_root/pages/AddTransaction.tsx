@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import {useRef} from "react"
 import {
   Card,
   CardContent,
@@ -35,7 +35,7 @@ const AddTransaction = () => {
 
   const handleTransactionSubmission = () => {
     if (ExpenseRecipentRef.current.value === '' || ExpenseAmountRef.current.value === '' || ExpenseBudgetClassRef.current.value === '') {
-      toast.error((t) => (
+      toast.error(() => (
         <div>
           <p><b>Transaction Failed</b></p>
           <p className="text-xs">Please fill out the fields and try again.</p>
@@ -55,7 +55,7 @@ const AddTransaction = () => {
     ExpenseAmountRef.current.value = ''
     ExpenseRecipentRef.current.value = ''
     ExpenseNoteRef.current!.value = ''
-    toast.success((t) => (
+    toast.success(() => (
       <div>
         <p><b>Transaction Successful</b></p>
         <p className="text-xs">Your transaction has been recorded.</p>
@@ -72,7 +72,7 @@ const AddTransaction = () => {
 
   const handleIncomeSubmission = () => {
     if (IncomeRecipentRef.current.value === '' || IncomeAmountRef.current.value === '') {
-      toast.error((t) => (
+      toast.error(() => (
         <div>
           <p><b>Transaction Failed</b></p>
           <p className="text-xs">Please fill out the fields and try again.</p>
@@ -92,7 +92,7 @@ const AddTransaction = () => {
     IncomeAmountRef.current.value = ''
     IncomeRecipentRef.current.value = ''
     IncomeNoteRef.current!.value = ''
-    toast.success((t) => (
+    toast.success(() => (
       <div>
         <p><b>Transaction Successful</b></p>
         <p className="text-xs">Your transaction has been recorded.</p>
