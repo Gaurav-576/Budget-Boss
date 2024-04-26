@@ -10,7 +10,7 @@ const App = () => {
     <main className='flex h-screen bg-bg-right'>
       <Routes>
         <Route element={<RootLayout />}>
-          {/* <Route path="/" element={<Dashboard />} /> */}
+          <Route path="/" element={<Dashboard />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="addTransaction" element={<AddTransaction />} />
           <Route path="transactions" element={<Transactions />} />
