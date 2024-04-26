@@ -1,0 +1,88 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "date": "2017-01-01",
+      "type": "expense",
+      "amount": 1000,
+      "tag": "entertainment"
+    },
+    {
+      "id": 2,
+      "date": "2017-01-02",
+      "type": "income",
+      "amount": 2000,
+      "tag": "salary"
+    },
+    {
+      "id": 3,
+      "date": "2017-01-03",
+      "type": "expense",
+      "amount": 500,
+      "tag": "food"
+    },
+    {
+      "id": 4,
+      "date": "2017-01-04",
+      "type": "income",
+      "amount": 1000,
+      "tag": "salary"
+    },
+    {
+      "id": 5,
+      "date": "2017-01-05",
+      "type": "expense",
+      "amount": 200,
+      "tag": "transport"
+    },
+    {
+      "id": 6,
+      "date": "2017-01-06",
+      "type": "income",
+      "amount": 3000,
+      "tag": "salary"
+    },
+    {
+      "id": 7,
+      "date": "2017-01-07",
+      "type": "expense",
+      "amount": 1000,
+      "tag": "entertainment"
+    },
+    {
+      "id": 8,
+      "date": "2017-01-08",
+      "type": "expense",
+      "amount": 1500,
+      "tag": "health"
+    },
+    {
+      "id": 9,
+      "date": "2017-01-09",
+      "type": "expense",
+      "amount": 500,
+      "tag": "food"
+    },
+    {
+      "id": 10,
+      "date": "2017-01-10",
+      "type": "income",
+      "amount": 1000,
+      "tag": "salary"
+    },
+    {
+      "id": 11,
+      "date": "2017-01-11",
+      "type": "expense",
+      "amount": 200,
+      "tag": "transport"
+    },
+    {
+      "id": 12,
+      "date": "2017-01-12",
+      "type": "income",
+      "amount": 3000,
+      "tag": "salary"
+    }
+  ]
+}
